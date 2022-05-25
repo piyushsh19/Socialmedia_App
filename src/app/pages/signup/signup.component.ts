@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
-// import { finalize } from 'rxjs';
+import { finalize } from 'rxjs';
 import { AuthService } from 'src/app/services/auth.service';
 
 import { AngularFireStorage }  from '@angular/fire/compat/storage';
@@ -13,7 +13,7 @@ import { imageConfig } from 'src/util/config';
 
 // import { readAndCompressImage } from 'browser-image-resizer';
 
-imageConfig
+
 
 
 @Component({

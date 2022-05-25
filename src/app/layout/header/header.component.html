@@ -7,11 +7,11 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
-      <div class="navbar-nav ml-auto">
+      <div class="navbar-nav ml-auto  ">
         <!-- if the user is present then printing email -->
-        <div *ngIf="email" class="navbar-text float-left">
+        <div *ngIf="email" class="navbar-text ">
           {{email}} </div>
-        <a [routerLink]="[ '/']" routerLinkActive="active" class="nav-item nav-link" >Home</a>
+        <a [routerLink]="[ '/']"  class="nav-item nav-link" >Home</a>
         <!-- conditionally rendering links  -->
         <a *ngIf="!email" [routerLink]="[ '/signin']"  routerLinkActive="active" class="nav-item nav-link" >Sign In</a>
         <a *ngIf="!email" [routerLink]="[ '/signup']"  routerLinkActive="active" class="nav-item nav-link" >Sign Up</a>
